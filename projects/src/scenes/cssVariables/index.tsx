@@ -13,19 +13,19 @@ const CssVariables = () => {
         stateFunction(e.target.value);
     }
     return (
-        <div>
-            <h2> Update Css Variables with <span className="h1">JS</span></h2>
+        <div className="content-cssvariables">
+            <h2 className="title"> Update Css Variables with <span className="h1">JS</span></h2>
             <div className="controls">
                 <label htmlFor="spacing">Spacing:</label>
-                <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChangingEvent(e, setSpacing)} type="range" name="spacing" min="10" max="200" value={spacing} data-sizing="px"/>
+                <input className="settings" onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChangingEvent(e, setSpacing)} type="range" name="spacing" min="10" max="200" value={spacing} data-sizing="px"/>
 
                 <label htmlFor="blur">Blur:</label>
-                <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChangingEvent(e, setBlur)} type="range" name="blur" min="0" max="25" value={blurSetting} data-sizing="px"/>
+                <input className="settings" onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChangingEvent(e, setBlur)} type="range" name="blur" min="0" max="25" value={blurSetting} data-sizing="px"/>
         
                 <label htmlFor="base">Base color:</label>
-                <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChangingEvent(e, setColor)} type="color" name="base" value={color}/>
+                <input className="settings" onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChangingEvent(e, setColor)} type="color" name="base" value={color}/>
             </div>
-            <img alt="random image" src="https://source.unsplash.com/7bwQXzbF6KE/800x500"/>
+            <img alt="random image" className="image" src="https://source.unsplash.com/7bwQXzbF6KE/800x500"/>
         </div>
     );
 }

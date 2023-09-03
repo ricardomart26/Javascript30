@@ -1,16 +1,11 @@
 import { CSSProperties } from "react";
 import { useNavigate } from "react-router-dom";
 
-
-
-
 interface Project {
     title: string;
     image: string;
     route: string;
 }
-
-
 
 const Home = () => {
     

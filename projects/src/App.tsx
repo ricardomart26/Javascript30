@@ -9,7 +9,6 @@ import SearchBar from './scenes/searchBar';
 
 function App() {
   return (
-    <div className="App">
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/drumkit" element={<DrumKit/>}/>
@@ -18,7 +17,6 @@ function App() {
         <Route path="/flexPanels" element={<FlexPanels/>}/>
         <Route path="/searchBar" element={<SearchBar/>}/>
       </Routes>
-    </div>
   );
 }
 

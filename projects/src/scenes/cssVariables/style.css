@@ -5,24 +5,31 @@
     --blur: 10px;
 }
 
-body {
+h2.title {
+    padding:0;
+    margin:0;
+}
+
+.content-cssvariables {
     text-align: center;
     background: #193549;
+    background-size: cover;
     color: white;
     font-family: 'helvetica neue', sans-serif;
     font-weight: 100;
     font-size: 50px;
+    height: inherit !important;
 }
 
 .controls {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
-input {
+input.settings {
     width: 100px;
 }
 
-img {
+img.image {
     padding: var(--spacing);
     background: var(--base);
     filter: blur(var(--blur));

@@ -1,13 +1,10 @@
-body {
+.content-flexpanels {
     box-sizing: border-box;
     background: #ffc600;
     font-family: 'helvetica neue';
     font-size: 20px;
     font-weight: 200;
     margin: 0;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
 }
 
 .panels {
@@ -43,7 +40,6 @@ body {
 .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
 .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
 
-/* Flex Children */
 .panel > * {
     margin: 0;
     width: 100%;

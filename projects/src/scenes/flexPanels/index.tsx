@@ -24,13 +24,16 @@ const FlexPanels = () => {
     const phrases = ["Hey Let's Dance", "Give Take Receive", "Experience It Today", "Appreciate Your Day", "Life In Motion"];
 
     return (
-        <div className="panels">
-            {Array.from(phrases, (phrase, index) => (
-                <div key={index} onClick={handlePanelClicked} onTransitionEnd={handleTransitionEnd} className={`panel panel${index + 1}`}>
-                    <PanelContent title={phrase}/>
-                </div>)
-            )}
-        </div>);
+        <div className="content-flexpanels">
+            <div className="panels">
+                {Array.from(phrases, (phrase, index) => (
+                    <div key={index} onClick={handlePanelClicked} onTransitionEnd={handleTransitionEnd} className={`panel panel${index + 1}`}>
+                        <PanelContent title={phrase}/>
+                    </div>)
+                )}
+            </div>
+        </div>
+    );
 
 }
 

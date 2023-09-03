@@ -1,26 +1,23 @@
-body {
-    box-sizing: border-box;
-    background: #ffc600;
-    font-family: 'helvetica neue';
-    font-size: 20px;
-    font-weight: 200;
-}
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+.content-searchbar {
+  box-sizing: border-box;
+  background: #ffc600;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+  width: 100vw;
+  height: 100vh;
 
-input {
-  width: 100%;
-  padding: 20px;
 }
 
 .search-form {
   max-width: 400px;
-  margin: 50px auto;
+  margin: auto;
 }
 
 input.search {
+  width: 100%;
+  padding: 20px;
   margin: 0;
   text-align: center;
   outline: 0;
@@ -32,6 +29,7 @@ input.search {
   z-index: 2;
   border-radius: 5px;
   font-size: 40px;
+  margin: 50px 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
 }
 

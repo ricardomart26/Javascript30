@@ -24,11 +24,14 @@ const JsClock = () => {
     }, []);
 
     return (
-        <div className="clock">
-            <div className="hand hour-hand" style={{ transform: `rotate(${hoursDegrees}deg)` }}></div>
-            <div className="hand min-hand" style={{ transform: `rotate(${minutesDegrees}deg)` }}></div>
-            <div className="hand second-hand" style={{ transform: `rotate(${secondsDegrees}deg)` }}></div>  
-        </div>       
+        <div className="content-jsclock">
+            <div className="clock">
+                <div className="hand hour-hand" style={{ transform: `rotate(${hoursDegrees}deg)` }}></div>
+                <div className="hand min-hand" style={{ transform: `rotate(${minutesDegrees}deg)` }}></div>
+                <div className="hand second-hand" style={{ transform: `rotate(${secondsDegrees}deg)` }}></div>  
+            </div>       
+
+        </div>
     )
 }
 
