@@ -1,6 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
-// import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './scenes/home';
 import DrumKit from './scenes/drumkit';
