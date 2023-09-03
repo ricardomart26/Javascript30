@@ -3,6 +3,7 @@ import Home from './scenes/home';
 import DrumKit from './scenes/drumkit';
 import JsClock from './scenes/jsClock';
 import CssVariables from './scenes/cssVariables';
+import FlexPanels from './scenes/flexPanels';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/drumkit" element={<DrumKit/>}/>
         <Route path="/jsClock" element={<JsClock/>}/>
         <Route path="/cssVariables" element={<CssVariables/>}/>
+        <Route path="/flexPanels" element={<FlexPanels/>}/>
 
       </Routes>
     </div>
