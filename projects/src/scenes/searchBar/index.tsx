@@ -39,7 +39,6 @@ const SearchBar = () => {
                 </li>` 
             );
         })
-
         const sugestions = document.querySelector('.suggestions');
         if (!sugestions)
             return ;

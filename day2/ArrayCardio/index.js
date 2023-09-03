@@ -32,6 +32,9 @@ inventors.filter((inventor) => inventor.year >= 1500 && inventor.year < 1600);
 // COURSE WAY
 inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600);
 
+// CHAT GPT OTIMIZATION
+inventors.filter(({ year }) => year >= 1500 && year < 1600);
+
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
 
@@ -42,6 +45,9 @@ inventors.map((inventor) => [{'first': inventor.first, 'last': inventor.last}]);
 // COURSE WAY
 inventors.map(inventor => `${inventor.first} ${inventor.last}`);
 
+// CHAT GPT OTIMIZATION
+inventors.map(({ first, last }) => `${first} ${last}`);
+
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 
@@ -51,11 +57,13 @@ inventors.sort((inventor1, inventor2) => inventor1.year < inventor2.year ? -1 : 
 // COURSE WAY
 inventors.sort((a, b) => a.year > b.year ? 1 : -1);
 
+
+
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
 
 // MY AWAY
-inventors.reduce((acc, inventor) => acc + (inventor.passed - inventor.year), 0);
+inventors.reduce((acc, { passed, year}) => acc + (passed - year), 0);
 
 // COURSE WAY
 inventors.reduce((total, inventor) => {

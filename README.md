@@ -78,8 +78,45 @@ Query selector are used to select HTML elements from the DOM (Document Object Mo
     classList:
 
 
+## Day 2 ##
+
+Second day of the course we had a lot of small projects, so I did the day 2, 3, and 4. 
+
+So in the second day the challenge was to create a clock with js.
+The porpouse of this project was to learn how to change the hands of the clock (The rectangles that say the hour, min and seconds) with javascript by changing it's css style with the tranform: rotate(xdeg).
+I also learned how to use setInterval which basically runs a function that you pass it as a callback, multiple times.
+
+Concepts of the second day:
+
+- style propertie of the HTML element
+
+- setInterval
+
+
+
+Third project was to create some inputs (range and color) that would change a image style and also teach on how to use Css variables and change it with javascript.
+I also learned some new event listeners like the `change` and `mouseover` events.
+
+Concepts of the third day:
+
+- Css variables
+
+- change event listener
+
+- mouseover event listener
+
+
+## Day 3 ##
+
+
+
+
+
 ## USEFUL LINKS ##
 
 
 ## USEFUL FUNCTIONS ##
+
+
+
 

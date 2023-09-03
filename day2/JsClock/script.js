@@ -10,10 +10,8 @@ function setDate() {
     const seconds = now.getSeconds();
     const secondsDegres = ((seconds / 60) * 360) + 90;
 
-
     const minutes = now.getMinutes();
     const minutesDegres = ((minutes / 60) * 360) + 90;
-
 
     const hour = now.getHours();
     const hoursDegres = ((hour / 12) * 360) + 90;
