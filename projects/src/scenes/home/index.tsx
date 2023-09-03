@@ -1,4 +1,5 @@
 import { CSSProperties } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -13,6 +14,9 @@ interface Project {
 
 const Home = () => {
     
+
+    const navigate = useNavigate();
+
     const projects: Project[] = [{
         title: 'Drum Kit',
         image: 'images/drumkit.png',
@@ -43,30 +47,39 @@ const Home = () => {
 
     const projectsStyle: CSSProperties = {
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         flexDirection: 'row',
         flexWrap: "wrap",
+        alignContent: 'flex-start',
+        gap: "10px"
     }
 
     const projectBoxStyle: CSSProperties = {
-        border: "black 2px solid",
-        width: "10vh",
-        height: "10vh",
+        border: "black 4px solid",
+        width: "30vh",
+        height: "30vh",
+        listStyleType: "none",
     }
 
+    const handleClickProject = (e: React.MouseEvent<HTMLLIElement>, project: Project) => {
+        navigate(project.route);
+    }
 
     const renderProjectsBox = () => {
-        return ( projects.map((project, index) => {
-            <>
-                <li style={projectBoxStyle}/>
-            </>
+        return (projects.map((project, index) => {
+            return (<>
+                <li style={projectBoxStyle} onClick={(e: React.MouseEvent<HTMLLIElement>) => handleClickProject(e, project)}>
+                    <img src={project.image}></img>
+                    <p>{project.title}</p>
+                </li>
+            </>);
         }));
     }
     
     
     return (<div>
-        <ul>
-            
+        <ul style={projectsStyle}>
+            {renderProjectsBox()}
         </ul>
     </div>);
 }
