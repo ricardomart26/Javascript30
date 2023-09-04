@@ -5,6 +5,7 @@ import JsClock from './scenes/jsClock';
 import CssVariables from './scenes/cssVariables';
 import FlexPanels from './scenes/flexPanels';
 import SearchBar from './scenes/searchBar';
+import Canvas from './scenes/canvas';
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Route path="/cssVariables" element={<CssVariables/>}/>
         <Route path="/flexPanels" element={<FlexPanels/>}/>
         <Route path="/searchBar" element={<SearchBar/>}/>
+        <Route path="/canvas" element={<Canvas/>}/>
+
       </Routes>
   );
 }
